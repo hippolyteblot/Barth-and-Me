@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Endroits</title>
+</head>
+<body>
+    <!-- Bar With one button to comeback to index.html -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html" class="btn btn-primary">
+            <span class="glyphicon glyphicon-home">Retour</span>
+        </a>
+    </nav>
+
+    <!-- grid of four cards -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        
+        <!-- display a modal when clic on the card -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#maison-modal"
+            onclick="document.getElementById('maison-sound').play()">
+            <audio id="maison-sound" src="sounds/Maison.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/maison.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Maison</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="maison-modal" tabindex="-1" role="dialog" aria-labelledby="maison-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Maison</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/maison.jpg" alt="Maison" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Same for Piscine -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#piscine-modal"
+            onclick="document.getElementById('piscine-sound').play()">
+            <audio id="piscine-sound" src="sounds/Piscine.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/piscine.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Piscine</h5>
+            </div>
+        </div>  
+        <!-- modal -->
+        <div class="modal fade" id="piscine-modal" tabindex="-1" role="dialog" aria-labelledby="piscine-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Piscine</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/piscine.jpg" alt="Piscine" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Same for Salle de bain -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#salle_bain-modal"
+            onclick="document.getElementById('salle_bain-sound').play()">
+            <audio id="salle_bain-sound" src="sounds/Salle_bain.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/salle_bain.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Salle de bain</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="salle_bain-modal" tabindex="-1" role="dialog" aria-labelledby="salle_bain-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Salle de bain</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/salle_bain.jpg" alt="Salle de bain" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Same for Toilette -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#toilette-modal"
+            onclick="document.getElementById('toilette-sound').play()">
+            <audio id="toilette-sound" src="sounds/Toilette.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/toilette.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Toilette</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="toilette-modal" tabindex="-1" role="dialog" aria-labelledby="toilette-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Toilette</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/toilette.jpg" alt="Toilette" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>

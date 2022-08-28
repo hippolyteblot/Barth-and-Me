@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Nourriture</title>
+</head>
+<body>
+    <!-- Bar With one button to comeback to index.html -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html" class="btn btn-primary">
+            <span class="glyphicon glyphicon-home">Retour</span>
+        </a>
+    </nav>
+    <!-- grid of four cards -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        
+        <!-- display a modal when clic on the card -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#grenadine-modal"
+            onclick="document.getElementById('grenadine-sound').play()">
+            <audio id="grenadine-sound" src="sounds/Grenadine.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/grenadine.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Grenadine</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="grenadine-modal" tabindex="-1" role="dialog" aria-labelledby="grenadine-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Grenadine</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/grenadine.jpg" alt="Grenadine" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#lait_amande-modal"
+            onclick="document.getElementById('lait_amande-sound').play()">
+            <audio id="lait_amande-sound" src="sounds/Lait_amande.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/lait_amande.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Lait d'amande</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="lait_amande-modal" tabindex="-1" role="dialog" aria-labelledby="lait_amande-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="lait_amande-modal">Lait d'amande</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/lait_amande.jpg" alt="Lait d'amande" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#tresor-modal"
+            onclick="document.getElementById('tresor-sound').play()">
+            <audio id="tresor-sound" src="sounds/Tresor.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/tresor.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Trésor</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="tresor-modal" tabindex="-1" role="dialog" aria-labelledby="tresor-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="tresor-modal">Trésor</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/tresor.jpg" alt="Trésor" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Same for Prince -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#prince-modal"
+            onclick="document.getElementById('prince-sound').play()">
+            <audio id="prince-sound" src="sounds/Prince.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/prince.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Prince</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="prince-modal" tabindex="-1" role="dialog" aria-labelledby="prince-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="prince-modal">Prince</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/prince.jpg" alt="Prince" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Same for Fresubin -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#fresubin-modal"
+            onclick="document.getElementById('fresubin-sound').play()">
+            <audio id="fresubin-sound" src="sounds/Fresubin.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/fresubin.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Fresubin</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="fresubin-modal" tabindex="-1" role="dialog" aria-labelledby="fresubin-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fresubin-modal">Fresubin</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/fresubin.jpg" alt="Fresubin" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Same for Yaourt_grec -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#yaourt_grec-modal"
+            onclick="document.getElementById('yaourt_grec-sound').play()">
+            <audio id="yaourt_grec-sound" src="sounds/Yaourt_grec.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/yaourt_grec.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Yaourt à la grec</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="yaourt_grec-modal" tabindex="-1" role="dialog" aria-labelledby="yaourt_grec-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="yaourt_grec-modal">Yaourt à la grec</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/yaourt_grec.jpg" alt="Yaourt à la grec" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Same for Yaourt_vanille -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#yaourt_vanille-modal"
+            onclick="document.getElementById('yaourt_vanille-sound').play()">
+            <audio id="yaourt_vanille-sound" src="sounds/Yaourt_vanille.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/yaourt_vanille.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Yaourt à la vanille</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="yaourt_vanille-modal" tabindex="-1" role="dialog" aria-labelledby="yaourt_vanille-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="yaourt_vanille-modal">Yaourt à la vanille</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/yaourt_vanille.jpg" alt="Yaourt à la vanille" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
