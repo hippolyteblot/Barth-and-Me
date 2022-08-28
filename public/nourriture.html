@@ -224,6 +224,35 @@
             </div>
         </div>
 
+        <!-- Same for Crêpe -->
+        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#crepe-modal"
+            onclick="document.getElementById('crepe-sound').play()">
+            <audio id="crepe-sound" src="sounds/Crepe.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/crepe.png" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Crêpe</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="crepe-modal" tabindex="-1" role="dialog" aria-labelledby="crepe-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="crepe-modal">Crêpe</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/crepe.png" alt="Crêpe" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
     
