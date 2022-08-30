@@ -1,0 +1,33 @@
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+}
+
+.card {
+    width: 120px;
+    min-width: 120px;
+    margin: 4px;
+}
+
+#main-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column;
+    width: fit-content;
+    max-height: 100vh; 
+    padding-top: 10vh;
+    overflow: auto;
+    width: 100vw;
+}
+
+.modal-content {
+    width: 96vw;
+    height: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+}

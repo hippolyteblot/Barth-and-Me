@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -22,10 +23,10 @@
     </nav>
 
     <!-- grid of four cards -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+    <div id="main-container">
         
         <!-- display a modal when clic on the card -->
-        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#maison-modal"
+        <div class="card" data-toggle="modal" data-target="#maison-modal"
             onclick="document.getElementById('maison-sound').play()">
             <audio id="maison-sound" src="sounds/Maison.mp3" type="audio/mpeg"></audio>
             <img class="card-img-top" src="pictures/maison.jpg" alt="Card image cap">
@@ -54,7 +55,7 @@
         </div>
 
         <!-- Same for Piscine -->
-        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#piscine-modal"
+        <div class="card" data-toggle="modal" data-target="#piscine-modal"
             onclick="document.getElementById('piscine-sound').play()">
             <audio id="piscine-sound" src="sounds/Piscine.mp3" type="audio/mpeg"></audio>
             <img class="card-img-top" src="pictures/piscine.jpg" alt="Card image cap">
@@ -82,7 +83,7 @@
             </div>
         </div>
         <!-- Same for Salle de bain -->
-        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#salle_bain-modal"
+        <div class="card" data-toggle="modal" data-target="#salle_bain-modal"
             onclick="document.getElementById('salle_bain-sound').play()">
             <audio id="salle_bain-sound" src="sounds/Salle_bain.mp3" type="audio/mpeg"></audio>
             <img class="card-img-top" src="pictures/salle_bain.jpg" alt="Card image cap">
@@ -110,7 +111,7 @@
             </div>
         </div>
         <!-- Same for Toilette -->
-        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#toilette-modal"
+        <div class="card" data-toggle="modal" data-target="#toilette-modal"
             onclick="document.getElementById('toilette-sound').play()">
             <audio id="toilette-sound" src="sounds/Toilette.mp3" type="audio/mpeg"></audio>
             <img class="card-img-top" src="pictures/toilette.jpg" alt="Card image cap">
@@ -139,7 +140,7 @@
         </div>
 
         <!-- Same for Blanlhac -->
-        <div class="card" style="width: 180px; margin: 2px;" data-toggle="modal" data-target="#blanlhac-modal"
+        <div class="card" data-toggle="modal" data-target="#blanlhac-modal"
             onclick="document.getElementById('blanlhac-sound').play()">
             <audio id="blanlhac-sound" src="sounds/Blanlhac.mp3" type="audio/mpeg"></audio>
             <img class="card-img-top" src="pictures/blanlhac.jpg" alt="Card image cap">
@@ -159,6 +160,35 @@
                     </div>
                     <div class="modal-body">
                         <img src="pictures/blanlhac.jpg" alt="Blanlhac" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Same for Chambre -->
+        <div class="card" data-toggle="modal" data-target="#chambre-modal"
+            onclick="document.getElementById('chambre-sound').play()">
+            <audio id="chambre-sound" src="sounds/Chambre.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/chambre.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Chambre</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="chambre-modal" tabindex="-1" role="dialog" aria-labelledby="chambre-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Chambre</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/chambre.jpg" alt="Chambre" style="width: 100%;">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
