@@ -137,3 +137,33 @@
                 </div>
             </div>
         </div>
+        <!-- Same for Dado et Dady -->
+        <div class="card" data-toggle="modal" data-target="#dado-modal"
+            onclick="document.getElementById('dado-sound').play()">
+            <audio id="dado-sound" src="sounds/Dado.mp3" type="audio/mpeg"></audio>
+            <img class="card-img-top" src="pictures/dado.jpg" alt="Card image cap">
+            <div class="card-body" style="padding: 10px;">
+                <h5 class="card-title">Dado et Dady</h5>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="dado-modal" tabindex="-1" role="dialog" aria-labelledby="dado-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Dado et Dady</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="pictures/dado.jpg" alt="Grenadine" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
